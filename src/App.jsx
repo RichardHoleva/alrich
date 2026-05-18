@@ -1,10 +1,5 @@
-import Navbar from './components/Navbar/Navbar'
+import HomePage from './pages/HomePage'
 
 export default function App() {
-  return (
-    <>
-      <Navbar />
-      {/* More sections will go here as we build them */}
-    </>
-  )
+  return <HomePage />
 }
