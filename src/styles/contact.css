@@ -1,0 +1,278 @@
+/* ============================================================
+   CONTACT LAYOUT
+   ============================================================ */
+
+.contact {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 80px 48px;
+  display: grid;
+  grid-template-columns: 1fr 340px;
+  gap: 80px;
+  align-items: start;
+}
+
+/* ============================================================
+   FORM
+   ============================================================ */
+
+.contact__form {
+  display: flex;
+  flex-direction: column;
+  gap: 28px;
+}
+
+.contact__row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+}
+
+.contact__field {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.contact__label {
+  font-family: var(--font-body);
+  font-size: 11px;
+  font-weight: 500;
+  letter-spacing: 0.12em;
+  color: var(--text-body);
+}
+
+.contact__input,
+.contact__select,
+.contact__textarea {
+  font-family: var(--font-body);
+  font-size: 15px;
+  color: var(--text-main);
+  background: transparent;
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  padding: 14px 16px;
+  outline: none;
+  transition: border-color 0.2s;
+}
+
+.contact__input:focus,
+.contact__select:focus,
+.contact__textarea:focus {
+  border-color: var(--text-main);
+}
+
+.contact__select {
+  appearance: none;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='8' viewBox='0 0 12 8'%3E%3Cpath d='M1 1l5 5 5-5' stroke='%234a4a44' stroke-width='1.5' fill='none' stroke-linecap='round'/%3E%3C/svg%3E");
+  background-repeat: no-repeat;
+  background-position: right 16px center;
+  cursor: pointer;
+}
+
+.contact__textarea {
+  resize: vertical;
+  min-height: 160px;
+}
+
+/* ============================================================
+   BUDGET OPTIONS
+   ============================================================ */
+
+.contact__budget-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 12px;
+}
+
+.contact__budget-option {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  padding: 14px 16px;
+  font-family: var(--font-body);
+  font-size: 15px;
+  color: var(--text-main);
+  cursor: pointer;
+  transition: border-color 0.2s;
+}
+
+.contact__budget-option input[type="radio"] {
+  width: 18px;
+  height: 18px;
+  accent-color: var(--text-main);
+  flex-shrink: 0;
+}
+
+.contact__budget-option--active {
+  border-color: var(--text-main);
+}
+
+/* ============================================================
+   SUBMIT ROW
+   ============================================================ */
+
+.contact__checkbox {
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+  font-family: var(--font-body);
+  font-size: 13px;
+  color: var(--text-body);
+  cursor: pointer;
+}
+
+.contact__checkbox input {
+  margin-top: 2px;
+  flex-shrink: 0;
+  accent-color: var(--text-main);
+}
+
+.contact__checkbox a {
+  text-decoration: underline;
+}
+
+.contact__submit-row {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+  flex-wrap: wrap;
+}
+
+.contact__btn {
+  font-family: var(--font-body);
+  font-size: 13px;
+  font-weight: 600;
+  letter-spacing: 0.08em;
+  color: #fff;
+  background-color: var(--text-main);
+  border-radius: 999px;
+  padding: 14px 28px;
+  cursor: pointer;
+  transition: opacity 0.2s;
+}
+
+.contact__btn:hover {
+  opacity: 0.8;
+}
+
+.contact__alt {
+  font-family: var(--font-body);
+  font-size: 13px;
+  color: var(--text-body);
+}
+
+.contact__alt a {
+  text-decoration: underline;
+  color: var(--text-main);
+}
+
+/* ============================================================
+   SIDEBAR
+   ============================================================ */
+
+.contact__sidebar {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+  padding-top: 4px;
+}
+
+.contact__info-block {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.contact__info-label {
+  font-family: var(--font-body);
+  font-size: 10px;
+  font-weight: 500;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--text-body);
+}
+
+.contact__info-text {
+  font-family: var(--font-body);
+  font-size: 14px;
+  line-height: 1.7;
+  color: var(--text-main);
+}
+
+.contact__map {
+  width: 100%;
+  height: 200px;
+  border: none;
+  border-radius: 6px;
+  margin-top: 4px;
+}
+
+/* ============================================================
+   RESPONSIVE
+   ============================================================ */
+
+/* ============================================================
+   SUCCESS NOTIFICATION
+   ============================================================ */
+
+.success-notification {
+  position: fixed;
+  top: 24px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 1000;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  background-color: #d6edda;
+  border-radius: 12px;
+  padding: 20px 24px;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.12);
+  min-width: 360px;
+  max-width: 90vw;
+}
+
+.success-notification__icon {
+  width: 52px;
+  height: 52px;
+  border-radius: 50%;
+  background-color: #2e6b3e;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.success-notification__title {
+  font-family: var(--font-heading);
+  font-size: 18px;
+  font-weight: 700;
+  color: var(--text-main);
+  margin-bottom: 4px;
+}
+
+.success-notification__body {
+  font-family: var(--font-body);
+  font-size: 15px;
+  line-height: 1.5;
+  color: var(--text-main);
+}
+
+@media (max-width: 900px) {
+  .contact {
+    grid-template-columns: 1fr;
+    gap: 56px;
+    padding: 64px 20px;
+  }
+
+  .contact__row {
+    grid-template-columns: 1fr;
+  }
+
+  .contact__budget-grid {
+    grid-template-columns: 1fr;
+  }
+}

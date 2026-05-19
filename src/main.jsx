@@ -7,6 +7,7 @@ import './styles/homepage.css'
 import './styles/cards.css'
 import './styles/about.css'
 import './styles/footer.css'
+import './styles/contact.css'
 import App from './App.jsx'
 
 createRoot(document.getElementById('root')).render(
