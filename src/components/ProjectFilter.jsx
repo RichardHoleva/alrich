@@ -1,16 +1,21 @@
 import { useState } from 'react'
 import ProjectCard from './ProjectCard'
+import FamilyCottage from '/ALRICH/images/side_photo.png'
+import FamilyHouse from '/ALRICH/images/back.png'
+import interior from '/ALRICH/images/interier.png'
+import Vila from '/ALRICH/images/ModernVila.png'
+import OpenKitchen from '/ALRICH/images/OpenKitchen.png'
+import Minimalistic from '/ALRICH/images/Minimalistic.png'
+import publicImg from '/ALRICH/images/public.png'
 
 const PROJECTS = [
-  { id: 1, category: 'Residential', year: '2023', title: 'Family Cottage',         image: '/ALRICH/images/Main_hero_image.png' },
-  { id: 2, category: 'Residential', year: '2024', title: 'Family House',           image: '/ALRICH/images/back.png'            },
-  { id: 3, category: 'Residential', year: '2020', title: 'Modern Villa',           image: '/ALRICH/images/Side.png'            },
-  { id: 4, category: 'Interior',    year: '2024', title: 'Skylight Bedroom',       image: '/ALRICH/images/Side_photo.png'      },
-  { id: 5, category: 'Interior',    year: '2019', title: 'Open Kitchen Interior',  image: '/ALRICH/images/interier.png'        },
-  { id: 6, category: 'Interior',    year: '2025', title: 'Minimalistic Interior',  image: '/ALRICH/images/Side_photo.png'      },
-  { id: 7, category: 'Public',      year: '2023', title: 'Commercial Warehouse',   image: '/ALRICH/images/back.png'            },
-  { id: 8, category: 'Public',      year: '2021', title: 'Community Centre',       image: '/ALRICH/images/Side.png'            },
-  { id: 9, category: 'Public',      year: '2022', title: 'Public Library',         image: '/ALRICH/images/Main_hero_image.png' },
+  { id: 1, category: 'Residential', year: '2023', title: 'Family Cottage',         image: FamilyCottage },
+  { id: 2, category: 'Residential', year: '2024', title: 'Family House',           image: FamilyHouse },     
+  { id: 3, category: 'Interior', year: '2020', title: 'Skylight Bedroom',           image: interior },
+  { id: 4, category: 'Residential',    year: '2024', title: 'Modern Villa',       image: Vila },
+  { id: 5, category: 'Interior',    year: '2019', title: 'Open Kitchen Interior',  image: OpenKitchen},
+  { id: 6, category: 'Interior',    year: '2025', title: 'Minimalistic Interior',  image: Minimalistic},
+  { id: 7, category: 'Public',      year: '2023', title: 'Commercial Warehouse',   image: publicImg},
 ]
 
 const TABS = ['All', 'Residential', 'Interior', 'Public']

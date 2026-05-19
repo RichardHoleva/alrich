@@ -21,6 +21,7 @@ export default function ProjectsPage() {
       </div>
 
       <ProjectFilter />
+      
 
       <Footer />
     </>
