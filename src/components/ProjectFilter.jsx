@@ -1,5 +1,6 @@
 import { useState } from 'react'
 import ProjectCard from './ProjectCard'
+import Reveal from './Reveal'
 import FamilyCottage from '/ALRICH/images/side_photo.png'
 import FamilyHouse from '/ALRICH/images/back.png'
 import interior from '/ALRICH/images/interier.png'
@@ -49,14 +50,15 @@ export default function ProjectFilter() {
       </div>
 
       <div className="projects__grid">
-        {visible.map(project => (
-          <ProjectCard
-            key={project.id}
-            category={project.category}
-            year={project.year}
-            title={project.title}
-            image={project.image}
-          />
+        {visible.map((project, i) => (
+          <Reveal key={project.id} delay={i * 80}>
+            <ProjectCard
+              category={project.category}
+              year={project.year}
+              title={project.title}
+              image={project.image}
+            />
+          </Reveal>
         ))}
       </div>
 

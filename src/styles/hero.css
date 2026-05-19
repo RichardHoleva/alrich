@@ -58,6 +58,10 @@
   }
 
   .hero__heading {
-    font-size: 52px;
+    font-size: 38px;
+  }
+
+  .hero__image {
+    object-position: 45% center;
   }
 }

@@ -404,6 +404,10 @@
   gap: 24px;
 }
 
+.reviews__grid .reveal {
+  height: 100%;
+}
+
 
 @media (max-width: 900px) {
   .reviews__grid {
