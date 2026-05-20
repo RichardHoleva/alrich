@@ -4,6 +4,7 @@ import Navbar from '../components/Navbar'
 import Footer from '../components/Footer'
 import Reveal from '../components/Reveal'
 import { PROJECTS } from '../data/projects'
+import NotFoundPage from './404page'
 
 export default function DetailedPage() {
   const { id } = useParams()
@@ -12,18 +13,7 @@ export default function DetailedPage() {
   const sk = i18n.language === 'sk'
   const loc = (en, skVal) => sk && skVal != null ? skVal : en
 
-  if (!project) {
-    return (
-      <>
-        <Navbar />
-        <div className="detail-notfound">
-          <h2>{t('notFound.heading')}</h2>
-          <Link to="/projects">{t('notFound.back')}</Link>
-        </div>
-        <Footer />
-      </>
-    )
-  }
+  if (!project) return <NotFoundPage />
 
   const currentIndex = PROJECTS.findIndex(p => p.id === Number(id))
   const nextProject  = PROJECTS[(currentIndex + 1) % PROJECTS.length]
@@ -47,7 +37,7 @@ export default function DetailedPage() {
       <section className="detail-intro">
         <div className="detail-intro__inner">
           <div className="detail-intro__left">
-            <Link to="/projects" className="detail-intro__back">{t('back')}</Link>
+            <span className="detail-intro__back"><span className="detail-intro__back-line" />{t('back')}</span>
             <h1 className="detail-intro__title">
               {project.title.split(' ').map((word, i, arr) =>
                 i === arr.length - 1

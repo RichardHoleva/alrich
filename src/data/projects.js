@@ -15,6 +15,12 @@ import livingroomImg from '/ALRICH/images/interie_living_room.png'
 import insideWar from '/ALRICH/images/insidewarehouse.png'
 import sideWar from '/ALRICH/images/sidewarehosue.png'
 import backWar from '/ALRICH/images/backwarehouse.png'
+import backvila from '/ALRICH/images/backvila.png'
+import frontvila from '/ALRICH/images/frontvila.png'
+import sidevila from '/ALRICH/images/sidevila.png'
+import GuestsImg from '/ALRICH/images/guests.png'
+import LivingImg from '/ALRICH/images/Living.png'
+import KitchenImg from '/ALRICH/images/Kitchen.png'
 
 
 export const PROJECTS = [
@@ -100,50 +106,10 @@ export const PROJECTS = [
       project: 'Rodinný dom · Bratislava',
     },
   },
+  
   {
     id: 3,
     number: '03',
-    category: 'Interior',
-    year: '2020',
-    title: 'Skylight Bedroom',
-    location: 'Košice, SK',
-    area: '42 m²',
-    client: 'Private',
-    image: interior,
-    heroImage: interior,
-    gallery: [
-      { image: interior,     caption: 'MAIN VIEW',        caption_sk: 'HLAVNÝ POHĽAD' },
-      { image: Minimalistic, caption: 'DETAIL SHOT',      caption_sk: 'DETAILNÝ ZÁBER' },
-      { image: OpenKitchen,  caption: 'CONNECTING SPACE', caption_sk: 'PREPÁJACÍ PRIESTOR' },
-    ],
-    aboutHeadingPre: 'Light as the ',
-    aboutHeadingEm: 'primary material in a compact bedroom',
-    aboutHeadingPre_sk: 'Svetlo ako ',
-    aboutHeadingEm_sk: 'hlavný materiál v kompaktnej spálni',
-    aboutBody: [
-      'The Skylight Bedroom project arose from a simple observation: the room had good bones but no relationship with the sky above. The clients wanted something calmer, cleaner and flooded with natural light.',
-      'We stripped the space back and introduced a structural skylight that changes the room through the day. Material palette was kept deliberately quiet — white plaster, natural oak, linen.',
-      'The result is a room that feels twice its size and anchors the rest of the apartment.',
-    ],
-    aboutBody_sk: [
-      'Projekt Spálňa so strešným oknom vznikol z jednoduchého pozorovania: izba mala dobrú štruktúru, no nemala vzťah s oblohou nad ňou. Klienti chceli niečo pokojnejšie, čistejšie a zaplavené prirodzeným svetlom.',
-      'Priestor sme zjednodušili a vsadili konštrukčné strešné okno, ktoré mení izbu počas celého dňa. Materiálová paleta bola zámerne tichá — biela omietka, prírodný dub, ľan.',
-      'Výsledkom je izba, ktorá pôsobí dvojnásobne väčšia a kotví zvyšok bytu.',
-    ],
-    quote: {
-      text: 'Waking up to that light every morning changed how we feel about the whole apartment.',
-      author: 'Petra Kováčová',
-      initials: 'PK',
-      project: 'Skylight Bedroom · Košice',
-    },
-    quote_sk: {
-      text: 'Prebúdzanie sa do toho svetla každé ráno zmenilo náš pocit z celého bytu.',
-      project: 'Spálňa so strešným oknom · Košice',
-    },
-  },
-  {
-    id: 4,
-    number: '04',
     category: 'Residential',
     year: '2024',
     title: 'Modern Villa',
@@ -153,9 +119,9 @@ export const PROJECTS = [
     image: Vila,
     heroImage: Vila,
     gallery: [
-      { image: Vila,        caption: 'FRONT ELEVATION', caption_sk: 'PREDNÁ FASÁDA' },
-      { image: FamilyHouse, caption: 'GARDEN FACADE',   caption_sk: 'ZÁHRADNÁ FASÁDA' },
-      { image: heroImg,     caption: 'EVENING VIEW',    caption_sk: 'VEČERNÝ POHĽAD' },
+      { image: frontvila,    caption: 'FRONT ELEVATION', caption_sk: 'PREDNÁ FASÁDA' },
+      { image: sidevila,     caption: 'BACK VIEW',   caption_sk: 'ZÁHRADNÁ FASÁDA' },
+      { image: backvila,     caption: 'SIDE VIEW',    caption_sk: 'ZADNÝ POHĽAD' },
     ],
     aboutHeadingPre: 'A generous family villa with a ',
     aboutHeadingEm: 'restrained character',
@@ -183,20 +149,20 @@ export const PROJECTS = [
     },
   },
   {
-    id: 5,
-    number: '05',
+    id: 4,
+    number: '04',
     category: 'Interior',
     year: '2019',
-    title: 'Open Kitchen Interior',
+    title: 'Open Interior',
     location: 'Trnava, SK',
     area: '65 m²',
     client: 'Private',
     image: OpenKitchen,
     heroImage: OpenKitchen,
     gallery: [
-      { image: OpenKitchen,  caption: 'KITCHEN ISLAND',  caption_sk: 'KUCHYNSKÝ OSTROV' },
-      { image: interior,     caption: 'DINING AREA',     caption_sk: 'JEDÁLENSKÁ ZÓNA' },
-      { image: Minimalistic, caption: 'DETAIL · JOINERY',caption_sk: 'DETAIL · STOLÁRSTVO' },
+      { image: KitchenImg,  caption: 'KITCHEN ',  caption_sk: 'KUCHYNSKÝ OSTROV' },
+      { image: LivingImg,     caption: 'LIVING ROOM',     caption_sk: 'JEDÁLENSKÁ ZÓNA' },
+      { image: GuestsImg, caption: 'BOOKROOM',caption_sk: 'DETAIL · STOLÁRSTVO' },
     ],
     aboutHeadingPre: 'One continuous space for ',
     aboutHeadingEm: 'cooking, eating and talking',
@@ -223,8 +189,49 @@ export const PROJECTS = [
       project: 'Otvorená kuchyňa · Trnava',
     },
   },
-  {
+    {
     id: 6,
+    number: '06',
+    category: 'Public',
+    year: '2023',
+    title: 'Commercial Warehouse',
+    location: 'Žilina, SK',
+    area: '1 200 m²',
+    client: 'Commercial',
+    image: publicImg,
+    heroImage: publicImg,
+    gallery: [
+      { image: sideWar,     caption: 'SIDE VIEW', caption_sk: 'VÝCHODNÁ FASÁDA' },
+      { image: insideWar,   caption: 'INSIDE WAREHOUSE',  caption_sk: 'HLAVNÝ VSTUP' },
+      { image: backWar,     caption: 'BACK VIEW',   caption_sk: 'SITUÁCIA' },
+    ],
+    aboutHeadingPre: 'A working building that ',
+    aboutHeadingEm: 'takes its setting seriously',
+    aboutHeadingPre_sk: 'Pracovná budova, ktorá ',
+    aboutHeadingEm_sk: 'berie vážne svoje okolie',
+    aboutBody: [
+      'The brief called for a straightforward industrial building: robust, efficient and cheap to run. The site sits on the edge of Žilina beside older factory buildings and a treeline.',
+      'We organised the plan around a central logistics spine with offices at the front and loading at the rear. Facade material is corrugated corten steel — it weathers to match the older buildings nearby.',
+      'The result is a warehouse that does not pretend to be something else but handles itself with a certain quiet dignity.',
+    ],
+    aboutBody_sk: [
+      'Požadoval priamočiaru priemyselnú budovu: robustnú, efektívnu a lacnú na prevádzku. Pozemok leží na okraji Žiliny vedľa starších priemyselných budov a línie stromov.',
+      'Dispozíciu sme organizovali okolo centrálnej logistickej osi s kanceláriami vpredu a nakládkou vzadu. Fasádny materiál je zvlnená cor-ten oceľ — pri oxidácii ladí so staršími budovami v okolí.',
+      'Výsledkom je sklad, ktorý sa nestváral ničím iným, no nesie sa s určitou tichosťou a dôstojnosťou.',
+    ],
+    quote: {
+      text: 'Our staff actually like coming to work. The building feels considered, which is not something we expected from a warehouse.',
+      author: 'Radovan Kupec',
+      initials: 'RK',
+      project: 'Commercial Warehouse · Žilina',
+    },
+    quote_sk: {
+      text: 'Naši zamestnanci chodia do práce skutočne radi. Budova pôsobí premyslene, čo sme od skladu nečakali.',
+      project: 'Komerčný sklad · Žilina',
+    },
+  },
+  {
+    id: 'minimalistic',
     number: '06',
     category: 'Interior',
     year: '2025',
@@ -264,45 +271,5 @@ export const PROJECTS = [
       project: 'Minimalistický interiér · Bratislava',
     },
   },
-  {
-    id: 7,
-    number: '07',
-    category: 'Public',
-    year: '2023',
-    title: 'Commercial Warehouse',
-    location: 'Žilina, SK',
-    area: '1 200 m²',
-    client: 'Commercial',
-    image: publicImg,
-    heroImage: publicImg,
-    gallery: [
-      { image: sideWar,     caption: 'SIDE VIEW', caption_sk: 'VÝCHODNÁ FASÁDA' },
-      { image: insideWar,   caption: 'INSIDE WAREHOUSE',  caption_sk: 'HLAVNÝ VSTUP' },
-      { image: backWar,     caption: 'BACK VIEW',   caption_sk: 'SITUÁCIA' },
-    ],
-    aboutHeadingPre: 'A working building that ',
-    aboutHeadingEm: 'takes its setting seriously',
-    aboutHeadingPre_sk: 'Pracovná budova, ktorá ',
-    aboutHeadingEm_sk: 'berie vážne svoje okolie',
-    aboutBody: [
-      'The brief called for a straightforward industrial building: robust, efficient and cheap to run. The site sits on the edge of Žilina beside older factory buildings and a treeline.',
-      'We organised the plan around a central logistics spine with offices at the front and loading at the rear. Facade material is corrugated corten steel — it weathers to match the older buildings nearby.',
-      'The result is a warehouse that does not pretend to be something else but handles itself with a certain quiet dignity.',
-    ],
-    aboutBody_sk: [
-      'Požadoval priamočiaru priemyselnú budovu: robustnú, efektívnu a lacnú na prevádzku. Pozemok leží na okraji Žiliny vedľa starších priemyselných budov a línie stromov.',
-      'Dispozíciu sme organizovali okolo centrálnej logistickej osi s kanceláriami vpredu a nakládkou vzadu. Fasádny materiál je zvlnená cor-ten oceľ — pri oxidácii ladí so staršími budovami v okolí.',
-      'Výsledkom je sklad, ktorý sa nestváral ničím iným, no nesie sa s určitou tichosťou a dôstojnosťou.',
-    ],
-    quote: {
-      text: 'Our staff actually like coming to work. The building feels considered, which is not something we expected from a warehouse.',
-      author: 'Radovan Kupec',
-      initials: 'RK',
-      project: 'Commercial Warehouse · Žilina',
-    },
-    quote_sk: {
-      text: 'Naši zamestnanci chodia do práce skutočne radi. Budova pôsobí premyslene, čo sme od skladu nečakali.',
-      project: 'Komerčný sklad · Žilina',
-    },
-  },
+  
 ]

@@ -7,9 +7,9 @@ import ServiceCard from '../components/ServiceCard'
 import ReviewCard from '../components/ReviewCard'
 import Reveal from '../components/Reveal'
 import Footer from '../components/Footer'
-import interiorImg from '/ALRICH/images/interier.png'
 import backImg from '/ALRICH/images/back.png'
 import SideImg from '/ALRICH/images/side_photo.png'
+import OpenKitchenImg from '/ALRICH/images/OpenKitchen.png'
 import homeicon from '/ALRICH/images/icons/mi_home.png'
 import interior from '/ALRICH/images/icons/Vector.png'
 import visualizationIcon from '/ALRICH/images/icons/cil_3d.png'
@@ -55,13 +55,13 @@ export default function HomePage() {
           </Reveal>
           <div className="featured__grid">
             <Reveal delay={0}>
-              <ProjectCard category="Cottage" year="2024" title="Family Cottage" image={SideImg} />
+              <ProjectCard id={1} category="Cottage" year="2023" title="Family Cottage" image={SideImg} />
             </Reveal>
             <Reveal delay={100}>
-              <ProjectCard category="Interior" year="2024" title="Family House" image={interiorImg} />
+              <ProjectCard id={4} category="Interior" year="2019" title="Open Interior" image={OpenKitchenImg} />
             </Reveal>
             <Reveal delay={200}>
-              <ProjectCard category="Exterior" year="2024" title="Family House" image={backImg} />
+              <ProjectCard id={2} category="Residential" year="2024" title="Family House" image={backImg} />
             </Reveal>
           </div>
         </div>
@@ -137,10 +137,10 @@ export default function HomePage() {
             </Reveal>
             <Reveal delay={200}>
               <ReviewCard
-                initials="JG"
-                name="Jančo Gadžo"
-                project="Private home · Bratislava"
-                quote="They listened more than they drew, which is rare. The house we ended up with feels like ours, not a portfolio piece dropped on our plot."
+                initials="TB"
+                name="Tomáš Blaho"
+                project="Modern Villa · Nitra"
+                quote="It is large enough for the whole family and quiet enough for each of us. That balance is hard to achieve."
               />
             </Reveal>
           </div>

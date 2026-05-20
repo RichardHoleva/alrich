@@ -1,16 +1,5 @@
 /* DETAILED PROJECT PAGE */
 
-/* ── Not found ── */
-.detail-notfound {
-  min-height: 60vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  gap: 20px;
-  font-family: var(--font-body);
-}
-
 /* ── Hero ── */
 .detail-hero {
   position: relative;
@@ -65,7 +54,9 @@
 }
 
 .detail-intro__back {
-  display: inline-block;
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
   font-family: var(--font-body);
   font-size: 11px;
   font-weight: 500;
@@ -73,11 +64,14 @@
   text-transform: uppercase;
   color: var(--text-body);
   margin-bottom: 20px;
-  transition: color 0.2s;
 }
 
-.detail-intro__back:hover {
-  color: var(--text-main);
+.detail-intro__back-line {
+  display: inline-block;
+  width: 32px;
+  height: 1px;
+  background-color: var(--text-body);
+  flex-shrink: 0;
 }
 
 .detail-intro__title {
@@ -539,6 +533,11 @@
 }
 
 @media (max-width: 768px) {
+  .detail-hero {
+    height: auto;
+    aspect-ratio: 4 / 3;
+  }
+
   .detail-hero__bar {
     padding: 20px 24px;
   }

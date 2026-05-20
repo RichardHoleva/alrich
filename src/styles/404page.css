@@ -1,0 +1,68 @@
+.nf-main {
+  min-height: calc(100vh - 120px);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 2rem;
+  position: relative;
+}
+
+.nf-label {
+  font-family: var(--font-body);
+  font-size: 0.75rem;
+  letter-spacing: 0.15em;
+  color: var(--text-body);
+  margin-bottom: 0.5rem;
+}
+
+.nf-number {
+  font-family: var(--font-heading);
+  font-size: clamp(10rem, 28vw, 22rem);
+  font-weight: 700;
+  line-height: 1;
+  color: #ebebea;
+  user-select: none;
+  margin-bottom: -2rem;
+}
+
+.nf-heading {
+  font-family: var(--font-heading);
+  font-size: clamp(1.5rem, 3vw, 2.25rem);
+  font-weight: 700;
+  color: var(--text-main);
+  position: relative;
+  z-index: 1;
+  margin-bottom: 1rem;
+}
+
+.nf-body {
+  font-family: var(--font-body);
+  font-size: 0.9rem;
+  color: var(--text-body);
+  line-height: 1.7;
+  margin-bottom: 2rem;
+}
+
+.nf-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  background-color: var(--text-main);
+  color: #fff;
+  font-family: var(--font-body);
+  font-size: 0.78rem;
+  letter-spacing: 0.1em;
+  padding: 0.75rem 1.75rem;
+  border-radius: 2rem;
+  transition: background 0.2s;
+}
+
+.nf-btn:hover {
+  background-color: #333;
+}
+
+.nf-arrow {
+  font-size: 1rem;
+}
