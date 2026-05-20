@@ -9,6 +9,13 @@ import heroImg from '/ALRICH/images/Main_hero_image.png'
 import AngelImg from '/ALRICH/images/Angel_photo.png'
 import BackImg from '/ALRICH/images/Back_photos.png'
 import FrontImg from '/ALRICH/images/Front_photo.png'
+import sideImg from '/ALRICH/images/sideFH.png'
+import frontImg from '/ALRICH/images/front_angel.png'
+import livingroomImg from '/ALRICH/images/interie_living_room.png'
+import insideWar from '/ALRICH/images/insidewarehouse.png'
+import sideWar from '/ALRICH/images/sidewarehosue.png'
+import backWar from '/ALRICH/images/backwarehouse.png'
+
 
 export const PROJECTS = [
   {
@@ -64,9 +71,9 @@ export const PROJECTS = [
     image: FamilyHouse,
     heroImage: FamilyHouse,
     gallery: [
-      { image: FamilyHouse, caption: 'REAR FACADE · GARDEN SIDE', caption_sk: 'ZADNÁ FASÁDA · ZÁHRADNÁ STRANA' },
-      { image: heroImg,     caption: 'SIDE ELEVATION · SUNSET',   caption_sk: 'BOČNÁ FASÁDA · ZÁPAD SLNKA' },
-      { image: interior,    caption: 'TERRACE AT DUSK',            caption_sk: 'TERASA ZA SÚMRAKU' },
+      { image: frontImg, caption: 'REAR FACADE · GARDEN SIDE', caption_sk: 'ZADNÁ FASÁDA · ZÁHRADNÁ STRANA' },
+      { image: sideImg,     caption: 'SIDE ELEVATION · SUNSET',   caption_sk: 'BOČNÁ FASÁDA · ZÁPAD SLNKA' },
+      { image: livingroomImg,    caption: 'LIVING ROOM',            caption_sk: 'TERASA ZA SÚMRAKU' },
     ],
     aboutHeadingPre: 'A quiet family home ',
     aboutHeadingEm: 'near the city',
@@ -242,7 +249,7 @@ export const PROJECTS = [
       'The result is an apartment that photographs as minimal but lives as generous — because the space is doing the work.',
     ],
     aboutBody_sk: [
-      'Brief klienta bol osviežujúco jasný: odstrániť všetko, čo tam byť nemusí. Byt mal už dobré proporcie; potreboval úpravu, nie dekoráciu.',
+      'Klienta bol osviežujúco jasný: odstrániť všetko, čo tam byť nemusí. Byt mal už dobré proporcie; potreboval úpravu, nie dekoráciu.',
       'Šesť rôznych podlahových úprav sme nahradili jednou. Vstavaná úložná plocha nahradila voľne stojací nábytok. Farby sa zúžili na bielu, betón a teplé drevo.',
       'Výsledkom je byt, ktorý fotí minimalisticky, no žije veľkoryso — pretože priestor robí prácu.',
     ],
@@ -269,9 +276,9 @@ export const PROJECTS = [
     image: publicImg,
     heroImage: publicImg,
     gallery: [
-      { image: publicImg,   caption: 'MAIN ENTRANCE',  caption_sk: 'HLAVNÝ VSTUP' },
-      { image: FamilyHouse, caption: 'EAST ELEVATION', caption_sk: 'VÝCHODNÁ FASÁDA' },
-      { image: Vila,        caption: 'SITE CONTEXT',   caption_sk: 'SITUÁCIA' },
+      { image: sideWar,     caption: 'SIDE VIEW', caption_sk: 'VÝCHODNÁ FASÁDA' },
+      { image: insideWar,   caption: 'INSIDE WAREHOUSE',  caption_sk: 'HLAVNÝ VSTUP' },
+      { image: backWar,     caption: 'BACK VIEW',   caption_sk: 'SITUÁCIA' },
     ],
     aboutHeadingPre: 'A working building that ',
     aboutHeadingEm: 'takes its setting seriously',
@@ -283,7 +290,7 @@ export const PROJECTS = [
       'The result is a warehouse that does not pretend to be something else but handles itself with a certain quiet dignity.',
     ],
     aboutBody_sk: [
-      'Brief požadoval priamočiaru priemyselnú budovu: robustnú, efektívnu a lacnú na prevádzku. Pozemok leží na okraji Žiliny vedľa starších priemyselných budov a línie stromov.',
+      'Požadoval priamočiaru priemyselnú budovu: robustnú, efektívnu a lacnú na prevádzku. Pozemok leží na okraji Žiliny vedľa starších priemyselných budov a línie stromov.',
       'Dispozíciu sme organizovali okolo centrálnej logistickej osi s kanceláriami vpredu a nakládkou vzadu. Fasádny materiál je zvlnená cor-ten oceľ — pri oxidácii ladí so staršími budovami v okolí.',
       'Výsledkom je sklad, ktorý sa nestváral ničím iným, no nesie sa s určitou tichosťou a dôstojnosťou.',
     ],
@@ -296,47 +303,6 @@ export const PROJECTS = [
     quote_sk: {
       text: 'Naši zamestnanci chodia do práce skutočne radi. Budova pôsobí premyslene, čo sme od skladu nečakali.',
       project: 'Komerčný sklad · Žilina',
-    },
-  },
-  {
-    id: 8,
-    number: '02',
-    category: 'Test',
-    year: '2024',
-    title: 'Family House',
-    location: 'Bratislava, SK',
-    area: '240 m²',
-    client: 'Private',
-    image: FamilyHouse,
-    heroImage: FamilyHouse,
-    gallery: [
-      { image: FamilyHouse, caption: 'REAR FACADE · GARDEN SIDE', caption_sk: 'ZADNÁ FASÁDA · ZÁHRADNÁ STRANA' },
-      { image: heroImg,     caption: 'SIDE ELEVATION · SUNSET',   caption_sk: 'BOČNÁ FASÁDA · ZÁPAD SLNKA' },
-      { image: interior,    caption: 'TERRACE AT DUSK',            caption_sk: 'TERASA ZA SÚMRAKU' },
-    ],
-    aboutHeadingPre: 'A quiet family home ',
-    aboutHeadingEm: 'near the city',
-    aboutHeadingPre_sk: 'Tichý rodinný dom ',
-    aboutHeadingEm_sk: 'v blízkosti mesta',
-    aboutBody: [
-      'This family house was designed for a young couple looking to build their first home on the outskirts of Bratislava. The brief was simple — a warm, practical space that would grow with them.',
-      'We developed the full architectural concept from site analysis through to permit documentation, working closely with the clients at every stage. Material choices, window placements and the relationship between the house and its garden were resolved in dialogue rather than handed down.',
-      'The result is a quiet, well-proportioned home that feels connected to its surroundings without drawing attention to itself — built to live in, not to be photographed.',
-    ],
-    aboutBody_sk: [
-      'Tento rodinný dom bol navrhnutý pre mladý pár, ktorý si chcel postaviť prvý dom na okraji Bratislavy. Brief bol jednoduchý — teplý, praktický priestor, ktorý s nimi porastie.',
-      'Vypracovali sme kompletný architektonický koncept od analýzy pozemku až po projekt pre stavebné povolenie, v úzkej spolupráci s klientmi v každom kroku. Výber materiálov, osadenie okien a vzťah domu k záhrade sa formoval v dialógu, nie príkazmi.',
-      'Výsledkom je tichý, dobre proporcionovaný dom napojený na okolie — postavený na bývanie, nie na fotografovanie.',
-    ],
-    quote: {
-      text: 'They listened more than they drew. The house we ended up with feels like ours — not a portfolio piece.',
-      author: 'Jančo Gadžo',
-      initials: 'JG',
-      project: 'Family House · Bratislava',
-    },
-    quote_sk: {
-      text: 'Počúvali viac, ako kreslili. Dom, ktorý sme nakoniec dostali, cítiť ako náš — nie kus portfólia.',
-      project: 'Rodinný dom · Bratislava',
     },
   },
 ]
