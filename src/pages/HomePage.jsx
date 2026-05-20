@@ -33,7 +33,7 @@ export default function HomePage() {
           <Reveal delay={150}>
             <div className="about__right">
               <p className="about__body">
-                Alrich is an independent architecture practice based in Bratislava,
+                Alrih is an independent architecture practice based in Bratislava,
                 working across residential, cultural and small commercial projects.
                 Each commission begins with a long conversation about how a place is
                 used, where the light falls, and what stays once the noise has settled.

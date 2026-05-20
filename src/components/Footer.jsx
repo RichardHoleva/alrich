@@ -5,7 +5,7 @@ export default function Footer() {
     <footer className="footer">
       <div className="footer__inner">
         <div className="footer__brand">
-          <p className="footer__logo">ALRICH<span className="footer__dot">.</span></p>
+          <p className="footer__logo">ALRIH<span className="footer__dot">.</span></p>
           <p className="footer__tagline">
             Independent architecture studio. Residential,
             cultural and small commercial work across
@@ -43,7 +43,7 @@ export default function Footer() {
       </div>
 
       <div className="footer__bottom">
-        <p className="footer__copy">© 2026 Alrich Studio. All rights reserved.</p>
+        <p className="footer__copy">© 2026 Alrih Studio. All rights reserved.</p>
         <button className="footer__back-top" onClick={scrollToTop}>
           Back to top
           <span className="footer__back-top-icon">&#8593;</span>

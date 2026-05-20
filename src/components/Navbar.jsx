@@ -17,7 +17,7 @@ export default function Navbar() {
     <nav className="navbar">
       <div className="navbar__inner">
 
-        <Link to="/" className="navbar__logo">ALRICH<span className="navbar_logo_dot">.</span></Link>
+        <Link to="/" className="navbar__logo">ALRIH<span className="navbar_logo_dot">.</span></Link>
 
         <ul className={`navbar__links ${menuOpen ? 'navbar__links--open' : ''}`}>
           {navLinks.map((link) => (

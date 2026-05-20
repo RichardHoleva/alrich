@@ -23,7 +23,7 @@ export default function Hero() {
         </h1>
       </div>
       <div className="hero__image-wrap" ref={imageRef}>
-        <img src={heroImg} alt="ALRICH architecture project" className="hero__image" />
+        <img src={heroImg} alt="ALRIH architecture project" className="hero__image" />
       </div>
     </section>
   )

@@ -17,7 +17,7 @@ export default function AboutPage() {
               A small <em>team</em> with <em>careful</em> eye.
             </h1>
             <p className="about-intro__body">
-              Alrich is a small architectural and interior design studio based in Slovakia.
+              Alrih is a small architectural and interior design studio based in Slovakia.
               We work closely with our clients from the first sketch to the final handover,
               combining technical precision with a genuine care for how spaces feel to live in.
             </p>
@@ -35,7 +35,7 @@ export default function AboutPage() {
                 A <em>father</em> and <em>daughter</em> studio
               </h2>
               <p className="about-team__sub">
-                Behind Alrich are two people who bring different but complementary
+                Behind Alrih are two people who bring different but complementary
                 skills to every project. One with a background in architecture and
                 construction, the other in interior design and 3D visualisation.
                 Together they cover the full process.
@@ -51,7 +51,7 @@ export default function AboutPage() {
                 <p className="team-card__role">Founder · Architect</p>
                 <h3 className="team-card__name">Miroslav Cavo</h3>
                 <p className="team-card__bio">
-                  Miroslav is the founding architect of Alrich with years of experience
+                  Miroslav is the founding architect of Alrih with years of experience
                   in residential and public building design. He manages the technical side
                   of every project, from planning and permits to construction oversight,
                   making sure every design is not just beautiful but buildable.
@@ -66,7 +66,7 @@ export default function AboutPage() {
                 <p className="team-card__role">Partner · Interior Designer</p>
                 <h3 className="team-card__name">Nina Cavo</h3>
                 <p className="team-card__bio">
-                  Nina leads the interior design and 3D visualisation work at Alrich.
+                  Nina leads the interior design and 3D visualisation work at Alrih.
                   She transforms spaces through thoughtful material choices, light and
                   detail, and gives clients a clear picture of their future home before
                   a single wall is built.
@@ -92,7 +92,7 @@ export default function AboutPage() {
           <Reveal delay={150}>
             <div className="about-story__right">
               <p className="about-story__body">
-                Alrich was founded on the belief that good design should be
+                Alrih was founded on the belief that good design should be
                 accessible, honest and built to last.
               </p>
               <p className="about-story__body">

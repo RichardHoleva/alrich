@@ -1,6 +1,8 @@
-export default function ProjectCard({ category, year, title, image, href = '#' }) {
+import { Link } from 'react-router-dom'
+
+export default function ProjectCard({ id, category, year, title, image }) {
   return (
-    <a href={href} className="project-card" aria-label={`View ${title}`}>
+    <Link to={`/projects/${id}`} className="project-card" aria-label={`View ${title}`}>
       <div className="project-card__image-wrap">
         <img src={image} alt={title} className="project-card__image" />
       </div>
@@ -15,6 +17,6 @@ export default function ProjectCard({ category, year, title, image, href = '#' }
           </svg>
         </span>
       </div>
-    </a>
+    </Link>
   )
 }

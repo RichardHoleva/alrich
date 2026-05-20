@@ -80,12 +80,12 @@ export default function ContactForm() {
 
           <label className="contact__checkbox">
             <input type="checkbox" checked={agreed} onChange={e => setAgreed(e.target.checked)} />
-            I agree to the <a href="#">privacy policy</a> and consent to be contacted by Alrich Studio about my enquiry.
+            I agree to the <a href="#">privacy policy</a> and consent to be contacted by Alrih Studio about my enquiry.
           </label>
 
           <div className="contact__submit-row">
             <button type="submit" className="contact__btn">SEND MESSAGE →</button>
-            <span className="contact__alt">Or email us directly at <a href="mailto:alrcih@alrich.studio">alrcih@alrich.studio</a></span>
+            <span className="contact__alt">Or email us directly at <a href="mailto:alrih@alrih.studio">alrih@alrih.studio</a></span>
           </div>
 
         </form>
@@ -94,12 +94,12 @@ export default function ContactForm() {
       <aside className="contact__sidebar">
         <div className="contact__info-block">
           <p className="contact__info-label">STUDIO</p>
-          <p className="contact__info-text"><strong>Alrich Studio s.r.o.</strong><br />Štúrova 14<br />811 02 Bratislava<br />Slovakia</p>
+          <p className="contact__info-text"><strong>Alrih Studio s.r.o.</strong><br />Štúrova 14<br />811 02 Bratislava<br />Slovakia</p>
         </div>
 
         <div className="contact__info-block">
           <p className="contact__info-label">EMAIL</p>
-          <a href="mailto:alrich@alrich.studio" className="contact__info-text">alrich@alrich.studio</a>
+          <a href="mailto:alrih@alrih.studio" className="contact__info-text">alrih@alrih.studio</a>
         </div>
 
         <div className="contact__info-block">
