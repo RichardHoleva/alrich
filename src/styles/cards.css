@@ -33,6 +33,7 @@
   transition: transform 0.5s ease;
 }
 
+/* Subtle zoom on card hover */
 .project-card:hover .project-card__image {
   transform: scale(1.04);
 }
@@ -169,6 +170,7 @@
   flex: 1;
 }
 
+/* Divider line separates quote from author info */
 .review-card__author {
   display: flex;
   align-items: center;

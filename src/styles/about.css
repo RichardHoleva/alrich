@@ -22,6 +22,7 @@
   margin-bottom: 20px;
 }
 
+/* Fluid type: scales between 36px and 72px */
 .about-intro__heading {
   font-family: var(--font-heading);
   font-size: clamp(36px, 5vw, 72px);
@@ -278,6 +279,7 @@
   font-weight: 400;
 }
 
+/* Each row bordered top and bottom like a table */
 .about-process__list {
   display: flex;
   flex-direction: column;

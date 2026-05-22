@@ -1,3 +1,4 @@
+/* Stays pinned at top with frosted glass effect */
 .navbar {
   position: sticky;
   top: 0;
@@ -107,6 +108,7 @@
   transform-origin: center;
 }
 
+/* Animate burger lines into an X when open */
 .navbar__burger--open .navbar__burger-line:nth-child(1) {
   transform: translateY(6.5px) rotate(45deg);
 }
@@ -124,6 +126,7 @@
     padding: 0 20px;
   }
 
+  /* Mobile menu drops below the navbar bar */
   .navbar__links {
     display: none;
     position: absolute;
