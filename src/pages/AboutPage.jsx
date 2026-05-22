@@ -2,7 +2,8 @@ import { useTranslation } from 'react-i18next'
 import Navbar from '../components/Navbar'
 import Footer from '../components/Footer'
 import Reveal from '../components/Reveal'
-import heroImg from '/ALRICH/images/Main_hero_image.png'
+import daughterImg from '/ALRICH/images/daughter.png'
+import fatherImg from '/ALRICH/images/father.png'
 
 export default function AboutPage() {
   const { t } = useTranslation('about')
@@ -41,7 +42,7 @@ export default function AboutPage() {
             <Reveal delay={0}>
               <div className="team-card">
                 <div className="team-card__photo-wrap">
-                  <img src={heroImg} alt="Miroslav Cavo" className="team-card__photo" />
+                  <img src={fatherImg} alt="Miroslav Cavo" className="team-card__photo" />
                 </div>
                 <p className="team-card__role">{t('team.miroslav.role')}</p>
                 <h3 className="team-card__name">Miroslav Cavo</h3>
@@ -51,7 +52,7 @@ export default function AboutPage() {
             <Reveal delay={150}>
               <div className="team-card">
                 <div className="team-card__photo-wrap">
-                  <img src={heroImg} alt="Nina Cavo" className="team-card__photo" />
+                  <img src={daughterImg} alt="Nina Cavo" className="team-card__photo" />
                 </div>
                 <p className="team-card__role">{t('team.nina.role')}</p>
                 <h3 className="team-card__name">Nina Cavo</h3>
